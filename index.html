@@ -3,105 +3,71 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1.0">
   <title>Create a Job</title>
   <link rel="stylesheet" href="style.css"> <!-- Подключите ваш файл стилей -->
 </head>
 
 <body>
   <div class="container">
-    <table>
-      <tr>
-        <td>
-          <form id="clientDetails">
-            <div class="section">
-              <table>
-                <tr>
-                  <th><h2>Client details</h2></th>
-                </tr>
-                <tr>
-                  <td><input type="text" id="firstName" placeholder="First name"></td>
-                  <td><input type="text" id="lastName" placeholder="Last name"></td>
-                </tr>
-                <tr>
-                  <td><input class="inputAreaWidth100" type="tel" id="phone" placeholder="Phone"></td>
-                </tr>
-                <tr>
-                  <td><input type="email" id="email" placeholder="Email (optional)"></td>
-                </tr>
-              </table>
-            </div>
-          </form>
-        </td>
-        <td>
-          <form id="JobDetails">
-            <div class="section">
-              <table>
-                <tr>
-                  <th><h2>Job details</h2></th>
-                </tr>
-                <tr>
-                  <td><input type="text" id="jobType" placeholder="Job type"></td>
-                  <td><input type="text" id="jobSource" placeholder="Job source"></td>
-                </tr>
-                <tr>
-                  <td><textarea id="jobDescription" placeholder="Job description (optional)"></textarea></td>
-                </tr>
-              </table>
-            </div>
-          </form>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <form id="serviceLocation">
-            <div class="section">
-              <table>
-                <tr>
-                  <th><h2>Service location</h2></th>
-                </tr>
-                <tr>
-                  <td><input type="text" id="address" placeholder="Address"></td>
-                </tr>
-                <tr>
-                  <td><input type="text" id="city" placeholder="City"></td>
-                </tr>
-                <tr>
-                  <td><input type="text" id="state" placeholder="State"></td>
-                </tr>
-                <tr>
-                  <td><input type="text" id="zipCode" placeholder="Zip code"></td>
-                  <td><input type="text" id="area" placeholder="Area"></td>
-                </tr>
-              </table>
-            </div>
-          </form>
-        </td>
-        <td>
-          <form id="scheduled">
-            <div class="section">
-              <table>
-                <tr>
-                  <th><h2>Scheduled</h2></th>
-                </tr>
-                <tr>
-                  <td><input type="date" id="startDate" placeholder="Start date"></td>
-                </tr>
-                <tr>
-                  <td><input type="time" id="startTime" placeholder="Start time"></td>
-                  <td><input type="time" id="endTime" placeholder="End time"></td>
-                </tr>
-                <tr>
-                  <td><input type="text" placeholder="Test select"></td>
-                </tr>
-              </table>
-            </div>
-          </form>
-        </td>
-      </tr>
-    </table>
+    <form id="cliendivetails">
+      <div class="section">
+        <div><h2 class="form-header">Client details</h2></div>
+        <div><input type="text" id="firstName" placeholder="First name"></div>
+        <div><input type="text" id="lastName" placeholder="Last name"></div>
+        <div><input type="tel" id="phone" placeholder="Phone"></div>
+        <div><input type="email" id="email" placeholder="Email (optional)"></div>
+      </div>
+    </form>
   </div>
-  <script src="script.js"></script> <!-- Подключите ваш JavaScript файл -->
+  <div class="forms">
+    <form id="JobDetails">
+      <div class="section">
+        <div><h2 class="form-header">Job details</h2></div>
+        <div><input type="text" list="options" id="jobType" placeholder="Job type">
+          <datalist id="options">
+            <option value="Вариант 1">
+            <option value="Вариант 2">
+            <option value="Вариант 3">
+          </datalist>
+        </div>
+        <div><input type="text" id="jobSource" placeholder="Job source"></d>
+        <div><input id="jobDescription" placeholder="Job description (optional)"></input></div>
+      </div>
+    </form>
+  </div>
+  </tr>
+  <tr>
+  <div class="forms">
+    <form id="serviceLocation">
+      <div class="section">
+        <div><h2 class="form-header">Service location</h2></div>
+        <div><input type="text" id="address" placeholder="Address"></div>
+        <div><input type="text" id="city" placeholder="City"></div>
+        <div><input type="text" id="state" placeholder="State"></div>
+        <div><input type="text" id="zipCode" placeholder="Zip code"></div>
+        <div><input type="text" id="area" placeholder="Area"></div>
+      </div>
+    </form>
+  </div>
+  <div class="forms">
+    <form id="scheduled">
+      <div class="section">
+        <div><h2 class="form-header">Scheduled</h2></div>
+        <div><input type="date" id="stardivate" placeholder="Start date"></div>
+        <div class="start-end-time">
+          <input type="time" id="startTime" placeholder="Start time">
+          <i class="clock-icon"></i>
+        </div>
+        <div class="start-end-time">
+          <input type="time" id="endTime" placeholder="End time">
+          <i class="clock-icon"></i>
+        </div>
+        <div><input type="text" placeholder="Test select"></div>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
